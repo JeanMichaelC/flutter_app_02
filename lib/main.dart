@@ -14,8 +14,16 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('AppTitle'),
         ),
-        body: const Center(
-          child: Text('Some centered text'),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('This is my question'),
+              ElevatedButton(onPressed: () => {}, child: const Text('Answer1'),),
+              ElevatedButton(onPressed: () => {}, child: const Text('Answer2'),),
+              ElevatedButton(onPressed: () => {}, child: const Text('Answer3'),),
+            ],
+          )
         ),
       ),
     );
